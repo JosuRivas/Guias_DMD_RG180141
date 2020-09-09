@@ -1,0 +1,2320 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/2/2020 8:08:54 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="JOSU"
+  DTS:CreatorName="JOSU\josu_"
+  DTS:DTSID="{F3DC07C2-7820-4DFC-B3A6-E4C2240222B8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3026.27"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{9309E255-9601-49E8-B03E-6A22310B96C4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2B1DD541-5AE0-4906-A8CE-C29C34455BAC}"
+      DTS:ObjectName="Data">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::bulkfiles]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{C90DFD0A-B089-41AB-BF96-0F9DF0F2A86F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{8871723D-AF35-4C3C-8342-EF213ED3AAE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{600CD968-C5C7-4DB9-B80E-9EB4369642FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{E1759EB2-9F81-400A-931D-CFA098281C12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{9C31BE1A-5D91-4255-9A38-8129E4119822}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{DC6A2AFC-FFB6-479D-9F55-45E58F7AAA5D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{CE7DBE2B-B435-48EB-BF17-1658BA8CFA72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{6C37F969-AED3-4711-BAAB-5C87EF961744}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{B496A3E3-954E-4B33-B1B3-B90C5CDCC516}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{2E4B70E4-B3AA-4445-8086-0C593CA1AEB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{89C1072A-D5F4-48EA-84A7-3325E40F8B6B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[data2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{37561E16-EDED-480C-A0F5-5EEA20D7797D}"
+      DTS:ObjectName="data2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\bulkfiles\xaa.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{B97C0A3F-AA7A-41AC-89AB-017C9ECCFBB8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{A9780F04-23CB-4D0F-A47F-9C5AF3A55D7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{EE9BF4F2-2EE9-42C8-87A1-046E91880681}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{43D0147C-305F-4250-A095-C46BD016879B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{C4514FD5-451C-41B1-8AC7-99FF4DD61FA4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{0672C830-E4E4-4BC6-A49C-BFEED400B5F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{0F003116-DDA8-443D-9BE6-82E61568FA37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{2A3C4CAA-7048-4EFD-9280-50914EC99EAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{3F9CA5D8-B9BF-4053-A65B-DE9AA90C84D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{1C9B8B7C-F5EB-45DB-98CA-C099BC3FD401}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{6661CA8E-0061-451F-B235-9690B0EA90D3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[data3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BD2287F0-FF47-4FBD-AF44-FE727CAC6AED}"
+      DTS:ObjectName="data3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\bulkfiles\xaa.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{5DB0863E-3636-45BD-88BC-AF0A1EB25C3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{13D137C8-4237-4ECD-AC31-09FCA6C485A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{3B14B3DD-37E4-46D6-8173-EAD1404E3169}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{0319F194-F0BF-4C4E-8C11-B54DDD5CD074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{16086EE3-8569-4C62-BF68-1CE84C4D0221}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{2BCEC93D-20E0-4344-A9A9-911A97BCED64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{4F7093A1-2D9E-4053-8CB3-CFEF308BB154}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{5213E296-8B2E-4803-9BE3-6C223F7C4EA1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{96C2C3D7-AF3A-43DD-8893-617CD379AC82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{ACF1836C-38C8-400E-B27E-E6F9CBEC962A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{C2B09FE5-ECC0-4DEC-B5D9-33F7B0EC4930}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[date_error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{707D32A4-F49D-46C4-ABB8-9137B5770AB4}"
+      DTS:ObjectName="date_error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\bulkfiles\error_output\date_error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{1F1D261E-3492-4AFA-AA7A-053A4FA223C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{08BB6B4C-399A-45DF-84C6-320A783D8D06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{FDD2470B-1FAF-4954-A1A3-6103F802D336}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{7C3A3750-9FC7-4E94-A96C-13345BEFAB2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{1D2FE9FA-D54D-4B8A-A32B-D7CAA02136FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{A23690EB-DF21-4D03-9C54-C0F7A8C4CBE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{3A177755-350D-4FE0-8950-1B9782672F95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{44E66FE5-D99B-43F1-9DC1-4F1B0D057C23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{903D1812-ED96-48D6-9B4E-985ACC647942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{4A3EB571-B83F-4872-A6A6-4930A8B25108}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{7BE96869-E757-4715-B9D9-7FB7259D3059}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{DF4A367C-7D5D-46CE-8FA6-5E8D6FF40A45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{A760DDE2-6F27-4C2D-9363-4EA101BF7DBB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[flat_file_error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5E0705F9-D34E-4A9C-88BF-457C4808FB12}"
+      DTS:ObjectName="flat_file_error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\bulkfiles\error_output\flat_file_error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{8831593B-493F-4DDB-BD6C-B4D892981B49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{146C9DBA-699A-493E-A4CC-414852658B3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{E1464169-FD36-4682-A93D-9846BBCF4D5D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[JOSU.sv_school_products.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{246CA657-150C-4959-A7A9-7F31293B87E0}"
+      DTS:ObjectName="JOSU.sv_school_products.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=JOSU;User ID=sa;Initial Catalog=sv_school_products;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwHbw6O4EskKaNAN69KhZcAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC6SJqwQ5WuCijShV+i1JzkoIzVt60RWWFSPaCN3ae00QAAAAAOgAAAAAIAACAAAADc0NfKS6LI9xNPUTtaUEBr73ywZ6PhVgJGkUN/LiDfjhAAAAAhIMRyqmkrKgZrSuezOY28QAAAAKG9qD2vn3/rsph4PztoiGZXDd0DL6eaxmwdfXt1p7syneAvIn65yFfsv3UIzlRSbnkV5i/kGrEPWBxoD3gK9k4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.sv_school_products]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FA47B97C-9DA5-4CB0-B3B4-BE69BA9BA896}"
+      DTS:ObjectName="localhost.sv_school_products">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=sv_school_products;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[negative_price_error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{705049F5-5738-417D-B6EA-54DD4773E72C}"
+      DTS:ObjectName="negative_price_error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\bulkfiles\error_output\negative_price_error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{1D5F6ADF-0991-4089-980B-840914E5F4A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{CBFE5589-D81D-4188-A630-FD1969CCCFCB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{B9311523-D65A-41BB-812A-DE7418FAC3B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{A64EAE13-0A0D-4B6B-ACBF-AFCA6BFB0CAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{E8FFE460-8804-4B88-8CEE-7CD874907E42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{4386A05B-5366-4721-8778-717802FE1B2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{97CE56C7-6368-4767-877F-D4F2E6FC9659}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{7C0801B1-BEAC-4EE1-8B36-052B0F98434E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{CE6D2FD4-F3BC-45F9-9290-083F83CE3FD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{580D70B9-BC0A-427F-A15A-BC2F81E9312E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{2FA47646-6452-4E24-A318-67A8374EC01E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fecha_sondeo_fixed"
+              DTS:DTSID="{E5E5D316-D7B9-439D-8BC9-D83B78E2D95F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0BF91164-8872-41EF-BFEA-E9171F49A0A0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="bulkfiles">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{7D2D1B92-4CA7-4AB7-826C-2352343D4147}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{11327DDB-03B1-4F2B-843E-07064A8322BC}"
+        DTS:ObjectName="{11327DDB-03B1-4F2B-843E-07064A8322BC}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\bulkfiles" />
+            <FEFEProperty
+              FileSpec="*.txt" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Data Flow Task"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{4486ACD6-22E9-4D3D-8D68-E1D72AE3495B}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\conversiones"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="conversiones"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Inputs[Derived Column Input].Columns[Fecha Sondeo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Fecha Sondeo"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\conversiones.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]"
+                          name="fecha_sondeo_fixed"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)([SUBSTRING](#{Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]},5,4) + "-" + [SUBSTRING](#{Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]},1,1))</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)(SUBSTRING([Fecha Sondeo],5,4) + "-" + SUBSTRING([Fecha Sondeo],1,1))</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\conversiones.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\date_error"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="date_error">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">false</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Data Flow Task\date_error.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[date_error]"
+                      connectionManagerRefId="Package.ConnectionManagers[date_error]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Categoria]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Categoria"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Producto]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Producto"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Marca]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Marca"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Cantidad]"
+                          cachedDataType="numeric"
+                          cachedName="Cantidad"
+                          cachedPrecision="18"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Unidad]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Unidad"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Precio]"
+                          cachedDataType="cy"
+                          cachedName="Precio"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Establecimiento]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Establecimiento"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Direccion]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Direccion"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[De partamento]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="De partamento"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Municipio]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Municipio"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Fecha Sondeo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Fecha Sondeo"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output].Columns[ErrorColumn]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          dataType="r4"
+                          name="Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                          dataType="wstr"
+                          length="50"
+                          name="Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                          dataType="cy"
+                          name="Precio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Direccion" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Fecha Sondeo" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="flat_file_error">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">false</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[flat_file_error]"
+                      connectionManagerRefId="Package.ConnectionManagers[flat_file_error]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].Columns[Flat File Source Error Output Column]"
+                          cachedCodepage="1252"
+                          cachedDataType="text"
+                          cachedName="Flat File Source Error Output Column"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          name="Flat File Source Error Output Column" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="negative_price_error">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">false</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[negative_price_error]"
+                      connectionManagerRefId="Package.ConnectionManagers[negative_price_error]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Categoria]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Categoria"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Producto]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Producto"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Marca]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Marca"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Cantidad]"
+                          cachedDataType="numeric"
+                          cachedName="Cantidad"
+                          cachedPrecision="18"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Unidad]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Unidad"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Precio]"
+                          cachedDataType="cy"
+                          cachedName="Precio"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Establecimiento]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Establecimiento"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Direccion]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Direccion"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[De partamento]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="De partamento"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Municipio]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Municipio"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Fecha Sondeo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Fecha Sondeo"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[fecha_sondeo_fixed]"
+                          cachedDataType="dbDate"
+                          cachedName="fecha_sondeo_fixed"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[fecha_sondeo_fixed]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          dataType="r4"
+                          name="Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                          dataType="wstr"
+                          length="50"
+                          name="Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                          dataType="cy"
+                          name="Precio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Direccion" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Fecha Sondeo" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[fecha_sondeo_fixed]"
+                          dataType="dbDate"
+                          name="fecha_sondeo_fixed" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\Origen"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Origen"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Data Flow Task\Origen.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[data3]"
+                      connectionManagerRefId="Package.ConnectionManagers[data3]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Categoria]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]"
+                          name="Categoria"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Producto]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]"
+                          name="Producto"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Marca]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]"
+                          name="Marca"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]"
+                          name="Cantidad"
+                          precision="18"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]"
+                          name="Unidad"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Precio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]"
+                          name="Precio"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Establecimiento]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]"
+                          name="Establecimiento"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Direccion]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]"
+                          name="Direccion"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[De partamento]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]"
+                          name="De partamento"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Municipio]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]"
+                          name="Municipio"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Fecha Sondeo]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]"
+                          name="Fecha Sondeo"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Producto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Marca]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
+                          dataType="r4"
+                          name="Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
+                          dataType="wstr"
+                          length="50"
+                          name="Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Precio]"
+                          dataType="cy"
+                          name="Precio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Establecimiento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Direccion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Direccion" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[De partamento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Municipio]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Fecha Sondeo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Fecha Sondeo" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\products"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="products"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[products]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Data Flow Task\products.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[JOSU.sv_school_products.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[JOSU.sv_school_products.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Categoria]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Categoria"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Categoria]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Producto]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Producto"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Producto]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Marca]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Marca"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Marca]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Cantidad]"
+                          cachedDataType="numeric"
+                          cachedName="Cantidad"
+                          cachedPrecision="18"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Unidad]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Unidad"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Unidad]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Precio]"
+                          cachedDataType="cy"
+                          cachedName="Precio"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Precio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Establecimiento]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Establecimiento"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Establecimiento]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Municipio]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Municipio"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Municipio]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[Direccion]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Direccion"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Direccionn]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[De partamento]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="De partamento"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].Columns[fecha_sondeo_fixed]"
+                          cachedDataType="dbDate"
+                          cachedName="fecha_sondeo_fixed"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Fecha Sondeo]"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Categoria]"
+                          dataType="wstr"
+                          length="100"
+                          name="Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Producto]"
+                          dataType="wstr"
+                          length="100"
+                          name="Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Marca]"
+                          dataType="wstr"
+                          length="100"
+                          name="Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad]"
+                          dataType="numeric"
+                          name="Cantidad"
+                          precision="18" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Unidad]"
+                          dataType="wstr"
+                          length="100"
+                          name="Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Precio]"
+                          dataType="cy"
+                          name="Precio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Establecimiento]"
+                          dataType="wstr"
+                          length="4000"
+                          name="Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Direccionn]"
+                          dataType="wstr"
+                          length="4000"
+                          name="Direccionn" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
+                          dataType="wstr"
+                          length="100"
+                          name="Departamento" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Municipio]"
+                          dataType="wstr"
+                          length="100"
+                          name="Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input].ExternalColumns[Fecha Sondeo]"
+                          dataType="dbDate"
+                          name="Fecha Sondeo" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\products.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\products.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\products.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\products.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="valores_negativos"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input].Columns[Precio]"
+                          cachedDataType="cy"
+                          cachedName="Precio"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[valores_positivos]"
+                      description="Output 1 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="valores_positivos"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]} &gt;= 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">Precio &gt;= 0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[valores_negativos]"
+                      description="Output 2 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="valores_negativos"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]} &lt; 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">Precio &lt; 0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">1</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[Conditional Split Default Output]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="Conditional Split Default Output"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[Derived Column Error Output]"
+                  endId="Package\Foreach Loop Container\Data Flow Task\date_error.Inputs[Flat File Destination Input]"
+                  name="Derived Column Error Output"
+                  startId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Error Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[Derived Column Output]"
+                  endId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Inputs[Conditional Split Input]"
+                  name="Derived Column Output"
+                  startId="Package\Foreach Loop Container\Data Flow Task\conversiones.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Error Output]"
+                  endId="Package\Foreach Loop Container\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input]"
+                  name="Flat File Source Error Output"
+                  startId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Error Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
+                  endId="Package\Foreach Loop Container\Data Flow Task\conversiones.Inputs[Derived Column Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Foreach Loop Container\Data Flow Task\Origen.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[valores_negativos]"
+                  endId="Package\Foreach Loop Container\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input]"
+                  name="valores_negativos"
+                  startId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[valores_negativos]" />
+                <path
+                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[valores_positivos]"
+                  endId="Package\Foreach Loop Container\Data Flow Task\products.Inputs[OLE DB Destination Input]"
+                  name="valores_positivos"
+                  startId="Package\Foreach Loop Container\Data Flow Task\valores_negativos.Outputs[valores_positivos]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{C8143EF1-9D37-4743-8BA0-AD57EE8DE50E}"
+          DTS:ObjectName="{C8143EF1-9D37-4743-8BA0-AD57EE8DE50E}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::bulkfiles" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task"
+          TopLeft="24.4571460393011,10.6352983732125" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="204.8,107.2"
+          Size="204.8,150.4"
+          Id="Package\Foreach Loop Container"
+          TopLeft="110.285716163869,69.7411774486819" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="109.6,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\Origen"
+          TopLeft="270.204086234201,22.8100843535163" />
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\flat_file_error"
+          TopLeft="83.1836748859973,172.867229315154" />
+        <NodeLayout
+          Size="139.2,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\conversiones"
+          TopLeft="321.632658538596,167.798321681039" />
+        <NodeLayout
+          Size="128,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\date_error"
+          TopLeft="576.326540427027,152.067229023442" />
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\negative_price_error"
+          TopLeft="507.918374770585,387.159669295314" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\valores_negativos"
+          TopLeft="331.755106211404,266.554625587067" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="391.232658538596,209.398321681039">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.7224476728074,57.1563039060283"
+              Start="0,0"
+              End="21.7224476728074,49.6563039060283">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5781519530141" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5781519530141"
+                    Point2="0,28.5781519530141"
+                    Point3="4,28.5781519530141" />
+                  <mssgle:LineSegment
+                    End="17.7224476728074,28.5781519530141" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.7224476728074,28.5781519530141"
+                    Point2="21.7224476728074,28.5781519530141"
+                    Point3="21.7224476728074,32.5781519530141" />
+                  <mssgle:LineSegment
+                    End="21.7224476728074,49.6563039060283" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[valores_negativos]"
+          TopLeft="438.688439544737,308.154625587067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.229935225847,79.0050437082469"
+              Start="0,0"
+              End="157.229935225847,71.5050437082469">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.0644860318349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.0644860318349"
+                    Point2="0,32.0644860318349"
+                    Point3="4,32.0644860318349" />
+                  <mssgle:LineSegment
+                    End="153.229935225847,32.0644860318349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="153.229935225847,32.0644860318349"
+                    Point2="157.229935225847,32.0644860318349"
+                    Point3="157.229935225847,36.0644860318349" />
+                  <mssgle:LineSegment
+                    End="157.229935225847,71.5050437082469" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.2983855816737,37.0644860318349,80.6331640625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Error Output]"
+          TopLeft="308.070752900868,64.4100843535163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-154.08707801487,108.457144961638"
+              Start="0,0"
+              End="-154.08707801487,100.957144961638">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.3191786605829" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.3191786605829"
+                    Point2="0,44.3191786605829"
+                    Point3="-4,44.3191786605829" />
+                  <mssgle:LineSegment
+                    End="-150.08707801487,44.3191786605829" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-150.08707801487,44.3191786605829"
+                    Point2="-154.08707801487,44.3191786605829"
+                    Point3="-154.08707801487,48.3191786605829" />
+                  <mssgle:LineSegment
+                    End="-154.08707801487,100.957144961638" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-140.669925726185,49.3191786605829,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Derived Column Error Output]"
+          TopLeft="460.832658538596,188.598321681039">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115.493881888431,-15.7310926575974"
+              Start="0,0"
+              End="107.993881888431,-15.7310926575974">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="53.7469409442155,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53.7469409442155,0"
+                    Point2="57.7469409442155,0"
+                    Point3="57.7469409442155,-4" />
+                  <mssgle:LineSegment
+                    End="57.7469409442155,-11.7310926575974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.7469409442155,-11.7310926575974"
+                    Point2="57.7469409442155,-15.7310926575974"
+                    Point3="61.7469409442155,-15.7310926575974" />
+                  <mssgle:LineSegment
+                    End="107.993881888431,-15.7310926575974" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-7.21444577453445,1,129.9227734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="341.937419567534,64.4100843535163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49.2952389710618,103.388237327523"
+              Start="0,0"
+              End="49.2952389710618,95.8882373275229">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.2478552532612" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.2478552532612"
+                    Point2="0,42.2478552532612"
+                    Point3="4,42.2478552532612" />
+                  <mssgle:LineSegment
+                    End="45.2952389710618,42.2478552532612" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.2952389710618,42.2478552532612"
+                    Point2="49.2952389710618,42.2478552532612"
+                    Point3="49.2952389710618,46.2478552532612" />
+                  <mssgle:LineSegment
+                    End="49.2952389710618,95.8882373275229" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\products"
+          TopLeft="205.714289217579,392.549025113195" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[valores_positivos]"
+          TopLeft="387.22177287807,308.154625587067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.907483660491,84.3943995261275"
+              Start="0,0"
+              End="-121.907483660491,76.8943995261275">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2517758076771" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.2517758076771"
+                    Point2="0,34.2517758076771"
+                    Point3="-4,34.2517758076771" />
+                  <mssgle:LineSegment
+                    End="-117.907483660491,34.2517758076771" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.907483660491,34.2517758076771"
+                    Point2="-121.907483660491,34.2517758076771"
+                    Point3="-121.907483660491,38.2517758076771" />
+                  <mssgle:LineSegment
+                    End="-121.907483660491,76.8943995261275" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-99.3153238614956,39.2517758076771,76.7231640625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Data Flow Task\products">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
