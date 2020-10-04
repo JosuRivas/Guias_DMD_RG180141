@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ETL (parte2) Desafio 2 DMD", "ETL (parte2) Desafio 2 DMD.dtproj", "{517EF1EF-3F17-4D54-9B7E-3CA67889AA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{517EF1EF-3F17-4D54-9B7E-3CA67889AA53}.Development|Default.ActiveCfg = Development
+		{517EF1EF-3F17-4D54-9B7E-3CA67889AA53}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

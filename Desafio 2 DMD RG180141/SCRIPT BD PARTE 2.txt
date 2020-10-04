@@ -1,0 +1,26 @@
+CREATE DATABASE MobilityReportSV
+go
+use MobilityReportSV
+go
+
+
+CREATE TABLE Tiempo(
+Fecha nvarchar(40) NOT NULL PRIMARY KEY,
+)
+
+CREATE TABLE Departamento(
+Cod_Departamento nvarchar(50) NOT NULL PRIMARY KEY,
+Departamento nvarchar(50))
+
+CREATE TABLE Timeline(
+Id_timeline int identity(1,1) NOT NULL PRIMARY KEY,
+Id_Tiempo nvarchar(40),
+Cod_Departamento nvarchar(50),
+Retail_Recreation_PC int,
+Grocery_Pharmacy_PC int,
+Park_PC int,
+TransitStations_PC int,
+Workplaces_PC int,
+Residential_PC int,
+CONSTRAINT FK_Tiempo FOREIGN KEY(Id_Tiempo) REFERENCES Tiempo(Fecha),
+CONSTRAINT FK_Dep FOREIGN KEY(Cod_Departamento) REFERENCES Departamento(Cod_Departamento))
