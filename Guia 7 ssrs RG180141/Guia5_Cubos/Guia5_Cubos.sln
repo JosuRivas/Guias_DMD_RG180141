@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Guia5_Cubos", "Guia5_Cubos.dwproj", "{7411DAA3-B147-40C4-9AD0-A72BE7126E15}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ReporteDW", "ReporteDW\ReporteDW.rptproj", "{7D80980E-44FD-461A-84A2-C97256FB92DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Development|Default = Development|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Debug|Default.ActiveCfg = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Debug|Default.Build.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Debug|Default.Deploy.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.DebugLocal|Default.ActiveCfg = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.DebugLocal|Default.Build.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.DebugLocal|Default.Deploy.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Development|Default.ActiveCfg = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Development|Default.Build.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Development|Default.Deploy.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Release|Default.ActiveCfg = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Release|Default.Build.0 = Development
+		{7411DAA3-B147-40C4-9AD0-A72BE7126E15}.Release|Default.Deploy.0 = Development
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Debug|Default.ActiveCfg = Debug
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Debug|Default.Build.0 = Debug
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Debug|Default.Deploy.0 = Debug
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.DebugLocal|Default.Build.0 = DebugLocal
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Development|Default.ActiveCfg = DebugLocal
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Development|Default.Build.0 = DebugLocal
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Release|Default.ActiveCfg = Release
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Release|Default.Build.0 = Release
+		{7D80980E-44FD-461A-84A2-C97256FB92DE}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
