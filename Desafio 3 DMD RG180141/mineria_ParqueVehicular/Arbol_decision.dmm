@@ -1,0 +1,264 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ed86bea5-1a08-4222-952b-ad19405b5266" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Datos</ID>
+  <Name>Arbol_decision</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Datos</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4933" scrolltop="-5575" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14520" y="16150" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Datos" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4614" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00000612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Datos" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4933</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5575</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7885cd64-addf-4f14-8dc3-8e94ebd0d12d">
+    <DataSourceViewID>Parque Vehicular</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e08a9282-53ef-4537-a3e4-3608fcfbea15">
+      <ID>Aduana</ID>
+      <Name>Aduana</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="975323fa-b26b-4cb5-95e9-ce3d6cda3666">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="678703c9-6276-473d-a3b8-eb0f1119046d">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Aduana</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0c227432-385f-470e-9e3d-9199bed0efd2">
+      <ID>Año Fabricacion</ID>
+      <Name>Año Fabricacion</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d43cdad8-92a1-44bf-866d-15641ccaa9cb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf6459c0-39c5-4de9-ad6a-a1d1f80e030f">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Año_fabricacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d034bdd-e01e-4fd2-aef9-df6b2a23280a">
+      <ID>Año Ingreso</ID>
+      <Name>Año Ingreso</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c715c71-6338-466e-b1b4-2288481d866b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef7d45ec-3591-4274-8ff7-3c7fda67fef6">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Año_Ingreso</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c479e27c-7ff9-4016-9535-94ccde2f5af3">
+      <ID>Clase</ID>
+      <Name>Clase</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="061c8138-e459-4014-afb7-954fb0d2c1fc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f06c92bb-bbc2-44f6-8b6f-e8ff01f49491">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Clase</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="44be0f9b-8728-452e-93d2-bac896c91f7d">
+      <ID>Condicion Ingreso</ID>
+      <Name>Condicion Ingreso</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b0f3825d-f44c-4e78-9128-c3217fa39f9d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cec5487e-0517-48d6-9e75-d1c109be3183">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Condicion_Ingreso</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="21a1bd9a-44cc-4e55-92a5-4f1039428000">
+      <ID>Id Auto</ID>
+      <Name>Id Auto</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92176ed1-b216-4568-b3c0-88bf1f21b105">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="636eb38a-e139-44fc-95b7-ec1f3af58e68">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Id_Auto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="072b2550-373a-4741-8099-09d97a7bdec9">
+      <ID>Pertenencia</ID>
+      <Name>Pertenencia</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="723fd01e-b364-439b-ad2c-399c3fc6daf0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7480278f-70de-4253-8a0d-b34be404f1e1">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Pertenencia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aa1ebf5c-7023-4b4e-97e2-c99ce78fd636">
+      <ID>Tipo Placa</ID>
+      <Name>Tipo Placa</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64db977b-6bbe-4d7a-ab55-714eaaedd658">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab2ba299-f618-4a63-9381-1dafeb92ff17">
+            <TableID>dbo_Datos</TableID>
+            <ColumnID>Tipo_placa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="f540e230-0132-4a50-be41-508765f40294">
+      <ID>Datos</ID>
+      <Name>Datos</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="4e382a0a-c1b0-46f9-9a86-98ba6eeba985">
+          <ID>Aduana</ID>
+          <Name>Aduana</Name>
+          <SourceColumnID>Aduana</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="477d4749-adb0-47a3-b282-7a0046c1df62">
+          <ID>Año Fabricacion</ID>
+          <Name>Año Fabricacion</Name>
+          <SourceColumnID>Año Fabricacion</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b99e5613-745a-4182-ae73-c088637c0715">
+          <ID>Año Ingreso</ID>
+          <Name>Año Ingreso</Name>
+          <SourceColumnID>Año Ingreso</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="62220276-dac7-430a-9f2c-22e9e0320fe1">
+          <ID>Clase</ID>
+          <Name>Clase</Name>
+          <SourceColumnID>Clase</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7d4d3f76-2f06-46e0-aba9-535e9c305b03">
+          <ID>Condicion Ingreso</ID>
+          <Name>Condicion Ingreso</Name>
+          <SourceColumnID>Condicion Ingreso</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="af76dcf3-3560-4013-a8e2-faddde1cbfaf">
+          <ID>Id Auto</ID>
+          <Name>Id Auto</Name>
+          <SourceColumnID>Id Auto</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="1f319ae1-a70d-42e1-9a13-00a48b3355bc">
+          <ID>Pertenencia</ID>
+          <Name>Pertenencia</Name>
+          <SourceColumnID>Pertenencia</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="52dc0778-9cb7-4bce-8f84-fb087e85df45">
+          <ID>Tipo Placa</ID>
+          <Name>Tipo Placa</Name>
+          <SourceColumnID>Tipo Placa</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>
