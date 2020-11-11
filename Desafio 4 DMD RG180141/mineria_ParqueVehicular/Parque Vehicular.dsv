@@ -1,0 +1,229 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8c4af576-3419-4ecf-b9e6-d9ac84d083a5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Parque Vehicular</ID>
+  <Name>Parque Vehicular</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Parque Vehicular</DataSourceID>
+  <Schema>
+    <xs:schema id="Parque_x0020_Vehicular" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Parque_x0020_Vehicular" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="b94df72e-5606-437d-b5a6-1126e2ec223d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Datos" msprop:design-time-name="6e30c83b-e8b4-4cbf-bb44-a7206ca0a8fd" msprop:DbTableName="Datos" msprop:FriendlyName="Datos" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id_Auto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d1413130-4ab6-4536-99b1-ec89f72390df" msprop:DbColumnName="Id_Auto" msprop:FriendlyName="Id_Auto" type="xs:int" />
+                  <xs:element name="Tipo_placa" msprop:design-time-name="e7d0941b-5ff0-4535-8a3a-731d3ddf513b" msprop:DbColumnName="Tipo_placa" msprop:FriendlyName="Tipo_placa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Año_fabricacion" msprop:design-time-name="f2d555fe-ffe2-43fc-afb2-a86bf4fa6463" msprop:DbColumnName="Año_fabricacion" msprop:FriendlyName="Año_fabricacion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cilindrada" msprop:design-time-name="0097c943-f11e-434c-ba54-23e4c989ed81" msprop:DbColumnName="Cilindrada" msprop:FriendlyName="Cilindrada" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cant_Cilindros" msprop:design-time-name="a9f5d96a-84e7-455a-8963-2d5c0bfc7b22" msprop:DbColumnName="Cant_Cilindros" msprop:FriendlyName="Cant_Cilindros" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cant_puertas" msprop:design-time-name="cf76527b-7cc3-4d5b-9d1b-ade7d6eab5ce" msprop:DbColumnName="Cant_puertas" msprop:FriendlyName="Cant_puertas" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Valor_Vehiculo" msprop:design-time-name="5ed377a6-5672-4c4c-8c08-3de96b5a485d" msprop:DbColumnName="Valor_Vehiculo" msprop:FriendlyName="Valor_Vehiculo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Colores" msprop:design-time-name="57298980-6a20-4522-b192-4a94d836b972" msprop:DbColumnName="Colores" msprop:FriendlyName="Colores" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fecha_Importacion" msprop:design-time-name="0593edf2-0443-4e03-9087-e584ab4be88d" msprop:DbColumnName="Fecha_Importacion" msprop:FriendlyName="Fecha_Importacion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Imp_Valor_Vehiculo" msprop:design-time-name="b25cac35-5144-4613-bf43-b2213d4773f8" msprop:DbColumnName="Imp_Valor_Vehiculo" msprop:FriendlyName="Imp_Valor_Vehiculo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fecha_Ingreso" msprop:design-time-name="2f74d78d-ce53-4112-a240-1636f9b07797" msprop:DbColumnName="Fecha_Ingreso" msprop:FriendlyName="Fecha_Ingreso" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Año_Ingreso" msprop:design-time-name="33ac1759-828b-46d7-9b2d-f9f9a1d15d5f" msprop:DbColumnName="Año_Ingreso" msprop:FriendlyName="Año_Ingreso" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Mes_Ingreso" msprop:design-time-name="b43bb230-8935-48c6-be61-d49d032c9d14" msprop:DbColumnName="Mes_Ingreso" msprop:FriendlyName="Mes_Ingreso" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Clase" msprop:design-time-name="a77bf7e6-49c5-4575-9d5d-3b1cca086c6e" msprop:DbColumnName="Clase" msprop:FriendlyName="Clase" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Pertenencia" msprop:design-time-name="34fd9677-3df7-4344-b528-0feb0423b75e" msprop:DbColumnName="Pertenencia" msprop:FriendlyName="Pertenencia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Marca" msprop:design-time-name="5cf54b67-166b-4c89-b625-c1c96eefeec5" msprop:DbColumnName="Marca" msprop:FriendlyName="Marca" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Modelo" msprop:design-time-name="c001bba0-a044-4e81-9d1d-48f156c0212b" msprop:DbColumnName="Modelo" msprop:FriendlyName="Modelo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Capacidad" msprop:design-time-name="cda431a4-0a1b-4b67-96c2-0e2b1e87a318" msprop:DbColumnName="Capacidad" msprop:FriendlyName="Capacidad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Des_Capacidad" msprop:design-time-name="4d4d4f9b-2aa8-40b0-b560-4474310012ae" msprop:DbColumnName="Des_Capacidad" msprop:FriendlyName="Des_Capacidad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Combustible" msprop:design-time-name="c0ddedfc-e512-4b3d-bf4b-45e8a45024e3" msprop:DbColumnName="Combustible" msprop:FriendlyName="Combustible" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Aduana" msprop:design-time-name="f49ab0e1-e6dd-41d3-9bf5-01df571feb88" msprop:DbColumnName="Aduana" msprop:FriendlyName="Aduana" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Condicion_Ingreso" msprop:design-time-name="cde3af9e-5db3-41d9-b07b-1173a8571363" msprop:DbColumnName="Condicion_Ingreso" msprop:FriendlyName="Condicion_Ingreso" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Propietario_Departamento" msprop:design-time-name="b3945140-faa4-42e2-8325-0df339d63308" msprop:DbColumnName="Propietario_Departamento" msprop:FriendlyName="Propietario_Departamento" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Propietario_Municipio" msprop:design-time-name="51b1a792-b188-4595-8521-facd2e7bb769" msprop:DbColumnName="Propietario_Municipio" msprop:FriendlyName="Propietario_Municipio" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="27d7f5d5-36d0-45df-bb75-db980125caa1" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Parque_x0020_Vehicular xmlns="" />
+  </Schema>
+</DataSourceView>
